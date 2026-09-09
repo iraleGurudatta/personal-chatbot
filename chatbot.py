@@ -16,16 +16,16 @@ prompt = "your are a assistant and can search on google for user queries."
 
 agent =create_agent(model = llm, tools = tools, system_prompt = prompt)
 
-app = FastAPI(
-    title="Chatbot API",
+# app = FastAPI(
+#     title="Chatbot API",
     
-)
+# )
 
-add_routes(
-    app, 
-    agent,
-    path="/agent"
-    )
+# add_routes(
+#     app, 
+#     agent,
+#     path="/agent"
+#     )
 
 
 
